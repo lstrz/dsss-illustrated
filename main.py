@@ -260,8 +260,8 @@ sampling_frequency = filter_hi_frequency * 4
 
 # Time
 message_code = np.array(tobits("Test"))
-time_start = 0
-time_end = 1 / message_frequency * message_code.size
+time_start = 0.0
+time_end = 1.0 / message_frequency * message_code.size
 time_duration = time_end - time_start
 coarse_acquisition_code_period = 1e-3
 dt = 1 / carrier_frequency / samples_per_carrier_period
